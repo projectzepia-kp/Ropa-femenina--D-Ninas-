@@ -1,1 +1,1002 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="D' Niñas — Moda femenina para niñas, adolescentes y mujeres."
+  >
+
+  <title>D' Niñas | Moda para cada etapa</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+  <!-- ==================================================
+       HEADER
+       ================================================== -->
+
+  <header class="header">
+
+    <div class="container header__inner">
+
+      <!-- Menú móvil -->
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+
+      <!-- Logo -->
+      <a href="#inicio" class="logo">
+        D' <em>Niñas</em>
+      </a>
+
+
+      <!-- Navegación -->
+      <nav class="nav" id="nav">
+
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#contacto">Contacto</a>
+
+      </nav>
+
+
+      <!-- Acciones -->
+      <div class="header__actions">
+
+        <!-- Modo oscuro -->
+        <button
+          class="icon-btn"
+          id="darkModeToggle"
+          type="button"
+          aria-label="Cambiar tema"
+          title="Cambiar tema"
+        >
+          ☾
+        </button>
+
+
+        <!-- WhatsApp -->
+        <a
+          href="https://wa.me/5491122334455"
+          class="icon-btn whatsapp-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="WhatsApp"
+        >
+          ◉
+        </a>
+
+
+        <!-- Carrito -->
+        <button
+          class="icon-btn cart-button"
+          id="cartToggle"
+          type="button"
+          aria-label="Abrir carrito"
+        >
+
+          🛍️
+
+          <span
+            class="cart-count"
+            id="cartCount"
+          >
+            0
+          </span>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ==================================================
+       CONTENIDO PRINCIPAL
+       ================================================== -->
+
+  <main>
+
+
+    <!-- ==================================================
+         HERO
+         ================================================== -->
+
+    <section class="hero" id="inicio">
+
+      <div class="container hero__inner">
+
+
+        <div class="hero__text">
+
+          <span class="eyebrow">
+            Nueva colección
+          </span>
+
+          <h1>
+            Moda para cada etapa,
+            estilo para cada momento.
+          </h1>
+
+          <p class="hero__subtitle">
+
+            Descubrí prendas pensadas para niñas,
+            adolescentes y mujeres que buscan
+            comodidad, personalidad y estilo.
+
+          </p>
+
+
+          <div class="hero__actions">
+
+            <a
+              href="#catalogo"
+              class="btn btn--primary"
+            >
+              Explorar catálogo
+            </a>
+
+            <a
+              href="#categorias"
+              class="btn btn--outline"
+            >
+              Ver categorías
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero__image">
+
+          <img
+            src="https://picsum.photos/seed/dninas-fashion/900/1000"
+            alt="Colección de moda femenina D' Niñas"
+          >
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CATEGORÍAS
+         ================================================== -->
+
+    <section
+      class="section"
+      id="categorias"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Descubrí
+          </span>
+
+          <h2>
+            Encontrá tu estilo
+          </h2>
+
+          <p>
+            Colecciones pensadas para diferentes edades,
+            estilos y ocasiones.
+          </p>
+
+        </div>
+
+
+        <div class="category-grid">
+
+
+          <button
+            class="category-card"
+            data-category="Mujer"
+            type="button"
+          >
+
+            <img
+              src="https://picsum.photos/seed/dn-mujer/600/750"
+              alt="Moda para mujer"
+              loading="lazy"
+            >
+
+            <span>
+              Mujer
+            </span>
+
+          </button>
+
+
+          <button
+            class="category-card"
+            data-category="Niñas"
+            type="button"
+          >
+
+            <img
+              src="https://picsum.photos/seed/dn-ninas/600/750"
+              alt="Moda para niñas"
+              loading="lazy"
+            >
+
+            <span>
+              Niñas
+            </span>
+
+          </button>
+
+
+          <button
+            class="category-card"
+            data-category="Adolescentes"
+            type="button"
+          >
+
+            <img
+              src="https://picsum.photos/seed/dn-adolescentes/600/750"
+              alt="Moda para adolescentes"
+              loading="lazy"
+            >
+
+            <span>
+              Adolescentes
+            </span>
+
+          </button>
+
+
+          <button
+            class="category-card"
+            data-category="Accesorios"
+            type="button"
+          >
+
+            <img
+              src="https://picsum.photos/seed/dn-accesorios/600/750"
+              alt="Accesorios de moda"
+              loading="lazy"
+            >
+
+            <span>
+              Accesorios
+            </span>
+
+          </button>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CATÁLOGO
+         ================================================== -->
+
+    <section
+      class="section section--catalog"
+      id="catalogo"
+    >
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Nuestra colección
+          </span>
+
+          <h2>
+            Catálogo
+          </h2>
+
+          <p>
+            Explorá nuestras prendas y agregá tus favoritas
+            al carrito.
+          </p>
+
+        </div>
+
+
+        <!-- Buscador -->
+
+        <div class="catalog-tools">
+
+          <div class="search">
+
+            <input
+              type="search"
+              id="productSearch"
+              placeholder="Buscar una prenda..."
+              aria-label="Buscar una prenda"
+            >
+
+          </div>
+
+
+          <!-- Filtros -->
+
+          <div
+            class="filters"
+            id="filters"
+          >
+
+            <button
+              class="filter-btn is-active"
+              data-filter="todos"
+              type="button"
+            >
+              Todos
+            </button>
+
+            <button
+              class="filter-btn"
+              data-filter="Mujer"
+              type="button"
+            >
+              Mujer
+            </button>
+
+            <button
+              class="filter-btn"
+              data-filter="Niñas"
+              type="button"
+            >
+              Niñas
+            </button>
+
+            <button
+              class="filter-btn"
+              data-filter="Adolescentes"
+              type="button"
+            >
+              Adolescentes
+            </button>
+
+            <button
+              class="filter-btn"
+              data-filter="Vestidos"
+              type="button"
+            >
+              Vestidos
+            </button>
+
+            <button
+              class="filter-btn"
+              data-filter="Tops"
+              type="button"
+            >
+              Tops
+            </button>
+
+            <button
+              class="filter-btn"
+              data-filter="Accesorios"
+              type="button"
+            >
+              Accesorios
+            </button>
+
+            <button
+              class="filter-btn"
+              data-filter="Ofertas"
+              type="button"
+            >
+              Ofertas
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- Productos -->
+
+        <div
+          class="product-grid"
+          id="productGrid"
+        >
+        </div>
+
+
+        <!-- Sin resultados -->
+
+        <div
+          class="empty-results"
+          id="emptyResults"
+          hidden
+        >
+
+          <h3>
+            No encontramos productos
+          </h3>
+
+          <p>
+            Probá con otra búsqueda o categoría.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         BANNER OFERTAS
+         ================================================== -->
+
+    <section
+      class="promo"
+      id="ofertas"
+    >
+
+      <div class="container promo__inner">
+
+        <div>
+
+          <span class="eyebrow eyebrow--light">
+            Oportunidad especial
+          </span>
+
+          <h2>
+            Hasta 30% OFF
+          </h2>
+
+          <p>
+            Aprovechá descuentos en productos seleccionados
+            de nuestra colección.
+          </p>
+
+        </div>
+
+
+        <button
+          class="btn btn--light"
+          id="offersButton"
+          type="button"
+        >
+          Ver ofertas
+        </button>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         BENEFICIOS
+         ================================================== -->
+
+    <section class="section">
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Comprá con tranquilidad
+          </span>
+
+          <h2>
+            Una experiencia simple
+          </h2>
+
+        </div>
+
+
+        <div class="benefits-grid">
+
+
+          <article class="benefit">
+
+            <div class="benefit__icon">
+              🚚
+            </div>
+
+            <h3>
+              Envíos
+            </h3>
+
+            <p>
+              Coordinamos el envío de tu pedido
+              de manera sencilla.
+            </p>
+
+          </article>
+
+
+          <article class="benefit">
+
+            <div class="benefit__icon">
+              💬
+            </div>
+
+            <h3>
+              Atención personalizada
+            </h3>
+
+            <p>
+              Consultanos por WhatsApp antes
+              de realizar tu pedido.
+            </p>
+
+          </article>
+
+
+          <article class="benefit">
+
+            <div class="benefit__icon">
+              ✨
+            </div>
+
+            <h3>
+              Colecciones seleccionadas
+            </h3>
+
+            <p>
+              Prendas elegidas pensando en
+              diferentes estilos y edades.
+            </p>
+
+          </article>
+
+
+          <article class="benefit">
+
+            <div class="benefit__icon">
+              🛍️
+            </div>
+
+            <h3>
+              Carrito de compras
+            </h3>
+
+            <p>
+              Armá tu pedido y envialo directamente
+              por WhatsApp.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         TESTIMONIOS
+         ================================================== -->
+
+    <section class="section testimonials">
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            Experiencias
+          </span>
+
+          <h2>
+            Lo que dicen nuestras clientas
+          </h2>
+
+        </div>
+
+
+        <div class="testimonial-grid">
+
+
+          <article class="testimonial">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Me encantaron las prendas y la atención.
+              Encontré exactamente lo que estaba buscando.”
+            </p>
+
+            <strong>
+              Sofía
+            </strong>
+
+          </article>
+
+
+          <article class="testimonial">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “La colección para niñas tiene opciones
+              hermosas y muy cómodas.”
+            </p>
+
+            <strong>
+              Mariana
+            </strong>
+
+          </article>
+
+
+          <article class="testimonial">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Me gustó mucho poder consultar y hacer
+              el pedido directamente por WhatsApp.”
+            </p>
+
+            <strong>
+              Camila
+            </strong>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CONTACTO
+         ================================================== -->
+
+    <section
+      class="section contact"
+      id="contacto"
+    >
+
+      <div class="container contact__inner">
+
+
+        <div class="contact__text">
+
+          <span class="eyebrow">
+            Estamos para ayudarte
+          </span>
+
+          <h2>
+            ¿Buscás algo especial?
+          </h2>
+
+          <p>
+            Contanos qué prenda estás buscando
+            y te ayudamos a encontrarla.
+          </p>
+
+        </div>
+
+
+        <form
+          class="contact-form"
+          id="contactForm"
+        >
+
+          <label for="contactName">
+            Nombre
+          </label>
+
+          <input
+            type="text"
+            id="contactName"
+            placeholder="Tu nombre"
+            required
+          >
+
+
+          <label for="contactPhone">
+            Teléfono
+          </label>
+
+          <input
+            type="tel"
+            id="contactPhone"
+            placeholder="Tu teléfono"
+          >
+
+
+          <label for="contactMessage">
+            Consulta
+          </label>
+
+          <textarea
+            id="contactMessage"
+            rows="5"
+            placeholder="¿Qué estás buscando?"
+            required
+          ></textarea>
+
+
+          <button
+            type="submit"
+            class="btn btn--primary"
+          >
+            Consultar por WhatsApp
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- ==================================================
+       FOOTER
+       ================================================== -->
+
+  <footer class="footer">
+
+    <div class="container footer__grid">
+
+
+      <div>
+
+        <a href="#inicio" class="logo logo--footer">
+          D' <em>Niñas</em>
+        </a>
+
+        <p>
+          Moda femenina para cada etapa,
+          con estilo y personalidad.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Tienda
+        </h3>
+
+        <a href="#catalogo">
+          Catálogo
+        </a>
+
+        <a href="#categorias">
+          Categorías
+        </a>
+
+        <a href="#ofertas">
+          Ofertas
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Ayuda
+        </h3>
+
+        <a href="#contacto">
+          Contacto
+        </a>
+
+        <a href="#contacto">
+          Envíos
+        </a>
+
+        <a href="#contacto">
+          Cambios
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Seguinos
+        </h3>
+
+        <a
+          href="https://instagram.com/dninas.tienda"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://facebook.com/dninas.tienda"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Facebook
+        </a>
+
+        <a
+          href="https://wa.me/5491122334455"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer__bottom">
+
+      <p>
+        © <span id="year"></span>
+        D' Niñas · Proyecto de portafolio
+      </p>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ==================================================
+       CARRITO
+       ================================================== -->
+
+  <div
+    class="cart-overlay"
+    id="cartOverlay"
+  ></div>
+
+
+  <aside
+    class="cart-drawer"
+    id="cartDrawer"
+    aria-label="Carrito de compras"
+  >
+
+    <div class="cart-drawer__header">
+
+      <h2>
+        Mi carrito
+      </h2>
+
+      <button
+        class="icon-btn"
+        id="closeCart"
+        type="button"
+        aria-label="Cerrar carrito"
+      >
+        ✕
+      </button>
+
+    </div>
+
+
+    <div
+      class="cart-items"
+      id="cartItems"
+    >
+    </div>
+
+
+    <div class="cart-drawer__footer">
+
+      <div class="cart-total">
+
+        <span>
+          Total
+        </span>
+
+        <strong id="cartTotal">
+          $0
+        </strong>
+
+      </div>
+
+
+      <button
+        class="btn btn--whatsapp"
+        id="checkoutBtn"
+        type="button"
+      >
+        Finalizar por WhatsApp
+      </button>
+
+
+      <button
+        class="clear-cart"
+        id="clearCartBtn"
+        type="button"
+      >
+        Vaciar carrito
+      </button>
+
+    </div>
+
+  </aside>
+
+
+
+  <!-- WhatsApp flotante -->
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/5491122334455"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    ☎
+  </a>
+
+
+  <!-- JavaScript -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
